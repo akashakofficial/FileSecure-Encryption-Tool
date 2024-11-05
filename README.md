@@ -1,90 +1,72 @@
 # FileSecure
 
-FileSecure is a GUI-based Python application for encrypting and decrypting files using a secure password. This application uses SHA-256 hashing and Base64 encoding for secure and reversible file encryption, ensuring privacy and protection for your files.
+FileSecure is a robust and secure file encryption and decryption tool that utilizes the Secure Modular Transformation Algorithm (SMTA) to protect sensitive information. By leveraging a password-based approach, FileSecure ensures that your files remain confidential and secure. The application employs PBKDF2 for key derivation and a unique modular transformation algorithm for file encryption. With a user-friendly graphical user interface (GUI) built using Tkinter, FileSecure is accessible to users of all skill levels.
 
-## Features
+### Features
 
-- **File Encryption**: Encrypt files using a password with a minimum length of 12 characters.
-- **File Decryption**: Decrypt previously encrypted files with the correct password.
-- **SHA-256 Password Hashing**: The password is hashed and encoded to secure the encryption/decryption process.
-- **Intuitive UI**: User-friendly interface with simple navigation between main, encryption, and decryption screens.
-- **Progress Indicator**: Animated progress indicator during file processing.
+- **File Encryption & Decryption**: 
+  - Easily encrypt and decrypt files with a secure password. The encryption process transforms your original files into unreadable formats that can only be reverted back to their original state with the correct password.
 
-## Requirements
+- **Secure Modular Transformation Algorithm (SMTA)**:
+  - The core of FileSecure’s encryption mechanism. SMTA employs a modular transformation technique to manipulate file bytes, ensuring high security while maintaining efficiency during encryption and decryption processes.
 
-- **Python 3.x**
-- **Tkinter**: (usually pre-installed with Python)
-- **NumPy**
-- **Hashlib**
+- **Strong Password Security**: 
+  - FileSecure uses the PBKDF2 (Password-Based Key Derivation Function 2) with SHA-256 hashing. This method applies a cryptographic salt and multiple iterations to create a strong key from your password, significantly improving security against brute-force attacks.
 
-Install any additional dependencies using pip:
+- **Graphical User Interface**: 
+  - A clean and intuitive GUI built with Tkinter allows users to navigate the application easily, making encryption and decryption straightforward tasks.
 
-```bash
-pip install numpy
-```
+- **Progress Indicator**: 
+  - An animated progress feedback system keeps users informed during the encryption and decryption processes, allowing you to monitor progress visually.
 
-## Usage
+- **Cross-Platform Compatibility**: 
+  - FileSecure is designed to run on any operating system that supports Python and Tkinter, including Windows, macOS, and Linux.
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/FileSecure.git
-   cd FileSecure
-   ```
+### Requirements
 
-2. **Run the Application**:
-   ```bash
-   python app.py
-   ```
+- **Python 3.x**: Make sure you have Python 3 installed on your machine.
+- **Tkinter**: Typically included with Python installations. Ensure it is available in your environment.
+- No external libraries are required as the application utilizes built-in Python libraries.
 
-3. **Encrypting a File**:
-   - Select “Encrypt” on the main page.
-   - Choose a file for encryption.
-   - Enter a secure password (at least 12 characters).
-   - Click “Encrypt” to save the encrypted file with a `.bin` extension.
+### Usage
 
-4. **Decrypting a File**:
-   - Select “Decrypt” on the main page.
-   - Choose the `.bin` encrypted file.
-   - Enter the correct password.
-   - Click “Decrypt” to save the decrypted file.
+1. **Launching the Application**:
+   - After running the command, the FileSecure main menu will appear with options to either encrypt or decrypt files.
 
-## FileSecure GUI
+2. **Encrypting a File**:
+   - Click on the **Encrypt** button to navigate to the encryption page.
+   - Select the file you wish to encrypt by clicking the **Select File for Encryption** button.
+   - Enter a secure password (minimum of 12 characters) in the designated field.
+   - Click the **Encrypt File** button to start the encryption process. The application will provide a progress indicator to show you the status of the operation.
+   - Upon successful encryption, the encrypted file will be saved with a .enc extension at your specified location.
 
-The application has three main pages:
+3. **Decrypting a File**:
+   - Click on the **Decrypt** button to navigate to the decryption page.
+   - Select the encrypted file by clicking the **Select Encrypted File** button.
+   - Enter the password used during the encryption process to unlock the file.
+   - Click the **Decrypt File** button to initiate the decryption process. Again, the application will show a progress indicator during this operation.
+   - Once completed, the decrypted file will be saved in your chosen location.
 
-- **Main Page**: Choose to encrypt or decrypt a file.
-- **Encryption Page**: Select a file, enter a password, and encrypt.
-- **Decryption Page**: Select an encrypted file, enter a password, and decrypt.
+### Security Note
 
-## Security Notes
+To ensure the security of your encrypted files, it is crucial to use strong and unique passwords. A recommended minimum password length is 12 characters, combining uppercase and lowercase letters, numbers, and special characters. FileSecure does not store passwords or sensitive information, providing an additional layer of security.
 
-- **Password Requirements**: A minimum of 12 characters is required for a strong password.
-- **SHA-256 Hashing**: SHA-256 ensures password security by hashing before encryption/decryption.
+### Contribution
 
-## Contributing
+Contributions to FileSecure are highly encouraged! If you would like to contribute, please follow these steps:
+- Fork the repository to your own GitHub account.
+- Make your changes or enhancements.
+- Submit a pull request with a description of your modifications.
 
-Contributions are welcome! To contribute:
+### Acknowledgements
 
-1. Fork this repository.
-2. Create a new branch for your feature.
-3. Submit a pull request with a description of your changes.
+- Special thanks to the developers of Python and Tkinter for providing the tools needed to create this project.
+- Inspired by best practices in cryptography and secure file handling.
 
-## License
+### Contact
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+For any inquiries, suggestions, or feedback regarding the FileSecure project, please feel free to contact me at officialakashak@gmail.com. I appreciate any input that can help improve this tool.
 
 ---
 
-### Screenshot
-
-Add a screenshot here of the main page and encryption/decryption interface to demonstrate the GUI.
-
----
-
-### Disclaimer
-
-This software is provided for educational purposes. Use FileSecure responsibly, and always test your encryption and decryption processes on non-critical data before applying it to important files.
-
----
-
-Feel free to reach out with any issues or questions, and thank you for using FileSecure!
+This README now highlights the use of the Secure Modular Transformation Algorithm (SMTA) and offers a comprehensive overview of the FileSecure project, including its features, installation, and usage instructions. Be sure to replace placeholders with your actual contact information and repository details.
