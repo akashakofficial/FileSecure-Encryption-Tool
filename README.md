@@ -19,9 +19,6 @@ FileSecure is a robust and secure file encryption and decryption tool that utili
 - **Progress Indicator**: 
   - An animated progress feedback system keeps users informed during the encryption and decryption processes, allowing you to monitor progress visually.
 
-- **Cross-Platform Compatibility**: 
-  - FileSecure is designed to run on any operating system that supports Python and Tkinter, including Windows, macOS, and Linux.
-
 ### Requirements
 
 - **Python 3.x**: Make sure you have Python 3 installed on your machine.
